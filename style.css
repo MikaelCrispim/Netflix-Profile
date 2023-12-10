@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-image: url('./img/thewitcher.webp');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.container {
+    background:linear-gradient(to top, #111 10%, transparent 90%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.container-h {
+    background: linear-gradient(to right, #111 2%, transparent 98%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.title--principal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.title--principal h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #f00;
+}
+.title--principal span {
+    margin-top: 10px;
+    font-family: 7px;
+    font-weight: 600;
+    color:#b8b8b8;
+}
+.container--principal {
+    position: absolute;
+    z-index: 999;
+    margin-left: 100px;
+    width: 270px;
+    height: 100vh;
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.squares {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.square {
+    margin: auto;
+    color: #aaa;
+    width: 80px;
+    height: 80px;
+    box-sizing: content-box;
+}
+.square img {
+    width: inherit;
+    height: inherit;
+}
+.active {
+    width: 100px;
+    height: 100px;
+    box-sizing: content-box;
+    border: 2px solid #aaa;
+    transition: all .4s;
+}
+.fig {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    font-weight: 550;
+    font-size: 20px;
+    margin-left: 10px;
+    display: none;
+}
+.hidden {
+    display: block;
+}
+.square.active {
+    display: flex;
+}
+.square--add {
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #aaa;
+    border: 2px solid #aaa;
+    width: 80px;
+    height: 80px;
+}
+
+.data {
+    font-size: 40px;
+    position: absolute;
+    color: rgb(183, 183, 183);
+    display: flex;
+    right: 9%;
+    bottom: 5%;
+    flex-direction: column;
+}
+.slide {
+    object-fit: cover;
+    width: 100vw;
+}
+.slider {
+    display: flex;
+    width: 200vw;
+    transition: all ease 2s;
+}
